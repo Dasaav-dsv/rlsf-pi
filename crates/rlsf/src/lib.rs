@@ -9,13 +9,10 @@ pub mod _changelog_ {}
 #[macro_use]
 mod utils;
 
-mod flex;
 pub mod int;
+mod rel;
 mod tlsf;
-pub use self::{
-    flex::*,
-    tlsf::{Tlsf, GRANULARITY},
-};
+pub use self::tlsf::{Tlsf, GRANULARITY};
 #[cfg(feature = "unstable")]
 pub use tlsf::BlockInfo;
 
