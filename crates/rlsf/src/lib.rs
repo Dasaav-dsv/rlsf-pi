@@ -10,7 +10,7 @@ pub mod _changelog_ {}
 mod utils;
 
 pub mod int;
-mod rel;
+pub mod rel;
 mod tlsf;
 pub use self::tlsf::{Tlsf, GRANULARITY};
 #[cfg(feature = "unstable")]
